@@ -8,15 +8,16 @@
     android:layout_height="match_parent"
     android:background="#282A37"
     android:padding="24dp"
-    tools:context=".SignUpAccount">
+    tools:context=".SignUpAccountActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/left_arrow"
         android:layout_width="40dp"
         android:layout_height="25dp"
         android:layout_gravity="left"
         app:srcCompat="@drawable/baseline_arrow_back_24"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:clickable="true"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -39,7 +40,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="0dp"
@@ -48,7 +50,7 @@
             android:layout_weight="@integer/material_motion_duration_long_2">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="172dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="First Name"
                 android:inputType="textPersonName"
@@ -61,11 +63,11 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
             android:layout_weight="@integer/material_motion_duration_long_2">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="172dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Last Name"
                 android:inputType="textPersonName"
@@ -155,12 +157,13 @@
             android:paddingEnd="3dp"/>
 
         <TextView
-            android:id="@+id/login"
+            android:id="@+id/login1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Login"
             android:textColor="#1D90F4"
-            android:textSize="12sp"/>
+            android:textSize="13sp"
+            android:clickable="true"/>
 
     </LinearLayout>
 
@@ -193,36 +196,33 @@
             android:background="#464B6D"/>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:paddingTop="35dp">
+        android:gravity="center">
 
-        <Button
+        <ImageView
             android:id="@+id/icon_facebook"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:backgroundTint="@color/white"
-            android:layout_marginEnd="15dp"
-            android:text="f"/>
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icons8_facebook"
+            android:layout_marginTop="10dp"
+            android:clickable="true"/>
 
-        <Button
+        <ImageView
             android:id="@+id/icon_google"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:backgroundTint="@color/white"
-            android:layout_marginEnd="15dp"
-            android:text="g"/>
-
-        <Button
-            android:id="@+id/icon_apple"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:backgroundTint="@color/white"
-            android:text="a"/>
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icons8_google"
+            android:layout_marginTop="10dp"
+            android:clickable="true"/>
 
     </LinearLayout>
+
+
 
 </LinearLayout>

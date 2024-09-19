@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#282A37"
     android:orientation="vertical"
-    tools:context=".Login"
+    tools:context=".LoginActivity"
     android:padding="24dp">
 
     <TextView
@@ -68,8 +68,9 @@
         android:text="Forgot Password?"
         android:gravity="right"
         android:textColor="#1D90F4"
-        android:textSize="12sp"
-        android:paddingTop="10dp"/>
+        android:textSize="13sp"
+        android:paddingTop="10dp"
+        android:clickable="true"/>
 
     <Button
         android:id="@+id/login"
@@ -96,12 +97,13 @@
             android:paddingEnd="3dp"/>
 
         <TextView
-            android:id="@+id/registr"
+            android:id="@+id/register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Register"
             android:textColor="#1D90F4"
-            android:textSize="12sp"/>
+            android:textSize="13sp"
+            android:clickable="true"/>
 
     </LinearLayout>
 
@@ -134,36 +136,34 @@
             android:background="#464B6D"/>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:paddingTop="35dp">
+        android:paddingTop="10dp">
 
-        <Button
+        <ImageView
             android:id="@+id/icon_facebook"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:backgroundTint="@color/white"
-            android:layout_marginEnd="15dp"
-            android:text="f"/>
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icons8_facebook"
+            android:layout_marginTop="10dp"
+            android:clickable="true"/>
 
-        <Button
+        <ImageView
             android:id="@+id/icon_google"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:backgroundTint="@color/white"
-            android:layout_marginEnd="15dp"
-            android:text="g"/>
-
-        <Button
-            android:id="@+id/icon_apple"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:backgroundTint="@color/white"
-            android:text="a"/>
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icons8_google"
+            android:layout_marginTop="10dp"
+            android:clickable="true"/>
 
     </LinearLayout>
+
+
 
 </LinearLayout>
